@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ font-family: "Red Hat Display", sans-serif;
+ background-image: url("images/pattern-background-desktop.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-color: hsl(225, 100%, 94%);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+p {
+ font-size: 1rem;
+ line-height: 23px;
+ font-weight: 500;
+ color: hsl(224, 23%, 55%);
+}
+
+.container {
+ max-width: 450px;
+ margin: 0 auto;
+ background-color: white;
+ border-radius: 25px;
+ overflow: hidden;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.summary-container {
+ padding: 25px;
+ text-align: center;
+}
+
+.title {
+ font-weight: 900;
+ color: hsl(223, 47%, 23%);
+}
+
+.subtitle {
+ margin-top: 15px;
+}
+
+.plan-container {
+ display: flex;
+ align-items: center;
+ background-color: hsl(225, 100%, 98%);
+ margin-top: 30px;
+ padding: 1rem;
+ border-radius: 15px;
+}
+
+.plan-infromation {
+ margin-left: 20px;
+}
+
+.plan-infromation h4 {
+ color: hsl(223, 47%, 23%);
+}
+
+.change {
+ margin-left: auto;
+ background: transparent;
+ border: none;
+ font-size: 13px;
+ font-weight: 700;
+ color: hsl(245, 75%, 52%);
+ text-decoration: underline;
+ transition: all 0.1s ease-in-out;
+}
+
+.change:hover {
+ cursor: pointer;
+ color: hsl(245, 82%, 74%);
+ text-decoration: none;
+}
+
+.Payment {
+ display: block;
+ padding: 15px 35px;
+ border: none;
+ border-radius: 15px;
+ font-family: "Red Hat Display", sans-serif;
+ font-size: 15px;
+ font-weight: 700;
+ color: white;
+ background-color: hsl(245, 75%, 52%);
+ margin-top: 25px;
+ box-shadow: 0 10px 10px hsl(245, 75%, 52%, 0.2);
+ transition: all 0.25s ease-in-out;
+}
+
+.Payment:hover {
+ cursor: pointer;
+ background-color: hsl(245, 82%, 74%);
+}
+
+.cancel {
+ display: block;
+ margin-top: 25px;
+ padding: 15px 25px;
+ background: transparent;
+ border: none;
+ font-family: "Red Hat Display", sans-serif;
+ font-size: 15px;
+ font-weight: 700;
+ color: hsl(224, 23%, 55%);
+ transition: all 0.2s ease-in-out;
+}
+
+.cancel:hover {
+ cursor: pointer;
+ color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+ margin-top: 50px;
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+ body {
+  background-image: url("/images/pattern-background-mobile.svg");
+  font-size: 14px;
+ }
+
+ .container {
+  margin-top: 10px;
+  max-width: 85%;
+ }
+
+ .header img {
+  max-width: 100%;
+ }
+
+ .plan-infromation {
+  text-align: left;
+ }
+
+ .attribution {
+  padding: 0 70px;
+  text-align: center;
+ }
+}
