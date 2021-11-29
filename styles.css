@@ -28,7 +28,7 @@ p {
 
 .container {
  max-width: 450px;
- margin: 0 auto;
+ margin: 1 auto;
  background-color: white;
  border-radius: 25px;
  overflow: hidden;
