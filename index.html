@@ -2,8 +2,8 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css" />
   <link
    rel="icon"
@@ -11,44 +11,52 @@
    sizes="32x32"
    href="./images/favicon-32x32.png"
   />
-
   <title>Frontend Mentor | Stats preview card component</title>
  </head>
  <body>
   <div class="container">
-   <div class="section1">
-    <h1 class="header">
-     Get <span class="title">insights</span> that help your business grow.
-    </h1>
-    <p class="diiscover">
-     Discover the benefits of data analytics and make better decisions regarding
-     revenue, customer experience, and overall efficiency.
-    </p>
-    <div class="sub-title-container">
-     <span>
-      <h3 class="sub-title">10k+</h3>
-      companies
-     </span>
-     <span>
-      <h3 class="sub-title">314</h3>
-      templates
-     </span>
-     <span>
-      <h3 class="sub-title">12m+</h3>
-      queries
-     </span>
+   <div class="wrapper">
+    <div class="groupA">
+     <div class="header">
+      <h1>
+       Get <span class="title">insights</span> that help your business grow.
+      </h1>
+      <p class="desc">
+       Discover the benefits of data analytics and make better decisions
+       regarding revenue, customer experience, and overall efficiency.
+      </p>
+     </div>
+     <div class="stat">
+      <span>
+       <h3 class="number">10k +</h3>
+       <p>companies</p>
+      </span>
+      <span>
+       <h3 class="number">314</h3>
+       <p>templates</p>
+      </span>
+      <span>
+       <h3 class="number">12m +</h3>
+       <p>queries</p>
+      </span>
+     </div>
+    </div>
+    <div class="groupB">
+     <img
+      src="/images/image-header-desktop.jpg"
+      alt="image-header-desktop"
+      class="image"
+     />
     </div>
    </div>
-   <div class="section2">
-    <img src="/images/image-header-desktop.jpg" alt="" class="image" />
-   </div>
   </div>
-
   <div class="attribution">
    Challenge by
    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
     >Frontend Mentor</a
-   >. Coded by <a href="#">Your Name Here</a>.
+   >
+   . <br />
+   Coded by <a href="#">moh-alaswad</a> .
   </div>
  </body>
 </html>
